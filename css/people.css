@@ -1,0 +1,102 @@
+.titleContainer{
+    width: 100%;
+    background-color: #5FBDCE;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 1em 0;
+    color: white;
+    letter-spacing: -0.2px;
+}
+.card{
+    padding: 1em;
+    margin-bottom: 40px;
+    border: none;
+    position: relative;
+}
+.card::before{
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.12;
+}
+.strongTitle{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    letter-spacing: 12.em;
+
+}
+.leadersContainers>div{
+    display: flex;
+}
+.card>div{
+    margin-top: 0.5em;
+}
+.card>div img{
+    height: 20px;
+    margin: 0 0.5em 0 0.5em;
+}
+.leadersContainers>div>img{
+    height: 20px;
+    margin: 5px 0.5em 0 0.2em;
+}
+.cardBlue::before{
+    background-color: #5fbdce;
+}
+.blueTitle{
+    color: #206876;
+}
+.cardBlueDark::before{
+    background-color: #206876;
+}
+.cardOrange::before{
+    background-color: #FFB773;
+}
+.orangeTitle{
+    color: #BF7630;
+}
+.profileImageCard{
+    position: absolute;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.profileImageCard>img{
+    height: 140px !important;
+}
+.containerOptionsPercentual>div>div.imgContainer{
+    width: 4em;
+    display: flex;
+    justify-content: center;
+}
+.percentualProfile, .containerOptionsPercentual>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loadPercentual{
+    width: 100%;
+    background-color: white;
+    margin-left: 1em;
+}
+.innerBarLoadPercentual{
+    background-color: #FF7C00;
+}
+.loadPercentual, .innerBarLoadPercentual{
+    height: 1.5em;
+    border-radius: 10px;
+}
+.innerBarLoadPercentual{
+    color: white;
+    text-align: right;
+    font-size: 0.8em;
+    padding-bottom: 1em;
+    padding-right: 0.6em;
+}
