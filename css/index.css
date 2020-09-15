@@ -1,0 +1,189 @@
+*{
+    font-family: Montserrat;
+}
+
+.mainContainerImg{
+    background-image: url('../assets/banner_Home.png');
+    background-size: cover;
+    position: relative;
+    padding-bottom: 200px;
+
+}
+.mainContainerImg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.37);
+}
+.logoText {
+    color: white;
+}
+
+.buttonsLogin{
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    letter-spacing: -0.2px;
+    
+}
+
+.yourFutureTextBanner{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    color: white;
+    letter-spacing: -0.2px;
+}
+.greatPlaceTextBanner{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.2em;
+    color: white;
+    letter-spacing: -0.2px;
+    margin-top:-0.5em;
+}
+.formSearch{
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 35px;
+    border: solid thin white;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.formSearch>*:not(:last-child){
+    border-right: solid thin rgb(255, 255, 255);
+
+}
+.formSearch *, .formSearch>.form-group>.form-control:focus{
+    background-color: transparent;
+    color: white !important;
+    border: none;
+    margin: 0;
+}
+.formSearch>.form-group{
+    flex: 1;
+}
+.formSearch .form-control{
+    height: 100%;
+    width: 100%;
+}
+.formSearch .form-control::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.buttonSearchJob{
+    background: rgb(81,235,75);
+    background: linear-gradient(180deg, rgba(81,235,75,1) 0%, rgba(23,161,18,1) 100%);
+    color: #ddd;
+}
+a.buttonSearchJob{
+    border-radius: 25px;
+    width: fit-content;
+    margin-top: 2em;
+    padding: 1em !important;
+    white-space: nowrap;
+    font-weight: bold;
+    color: white !important;
+}
+a.buttonSearchJob:hover{
+    cursor: pointer;
+    color: #eee !important;
+}
+
+.titleSeccionMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+.titleSeccionMain>h1{
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: rgba(32,104,118,1);
+    letter-spacing: -0.2px;
+    line-height: 1em;
+}
+.titleSeccionMain>span{
+    font-size: 1.5em;
+    color: #37B6CE;
+}
+
+
+
+.containerTitleInfo{
+    padding: 1em 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgba(32,104,118,1);
+    letter-spacing: -0.2px;
+    line-height: 1em;
+}
+.containerTitleInfo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    width: calc(100% + 30px);
+    z-index: -1;
+    border-top-right-radius: 94px;
+    border-bottom-right-radius: 94px;
+    background-color: #5FBDCE3B ;
+}
+.containerInfoInfo{
+    margin-bottom: 2rem;
+    letter-spacing: -0.76px;
+    width:80%;
+    font-family: Montserrat;
+}
+@media only screen and (max-width:991px){
+    .onlyPc{
+        display: none !important;
+    }
+    .yourFutureTextBanner{
+        line-height: 1em;
+        margin-bottom: 1em;
+    }
+    .greatPlaceTextBanner{
+        line-height: 1em;
+    }
+}
+@media only screen and (min-width:991px){
+    .onlyPhone{
+        display: none !important;
+    }
+    .logoText{
+        color: white !important;
+    }
+    .navbar-light .navbar-nav .nav-link{
+		color: white;
+    }
+    .buttonLogin{
+        background: rgb(4,133,157);
+        background: linear-gradient(0deg, rgba(4,133,157,1) 0%, rgba(95,189,206,1) 50%);
+    }
+    .buttonRegister{
+        background: rgb(255,124,0);
+        background: linear-gradient(0deg, rgba(255,124,0,1) 0%, rgba(255,183,115,1) 50%);
+    }
+    .buttonSearchJob{
+        position: absolute; bottom: 15px;
+    }
+}
